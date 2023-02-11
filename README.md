@@ -14,3 +14,5 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 
 * Task 1: adds while loop to keep checking *guess* input until it is correct
 * Task 2: adds if statement to check if *guess* input matches any letter from *word* variable
+* Task 3: separates previous code into two separate functions *check guess* and *ask_for_input*.
+  * *ask_for_input* verifies user input and passes variable *guess* to the *check_guess* function to check if letter from variable *guess* is in the *word*
