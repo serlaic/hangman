@@ -14,7 +14,7 @@ class Hangman:
         if guess in self.word:
             print(f"Good guess! {guess} is in the word.")
 
-    def ask_for_input(self):
+    def ask_for_input(self, check_guesses(guess)):
         while True:
             guess = input('Please choose a single letter:')
             if not (len(guess) == 1 and guess.isalpha()):
@@ -22,8 +22,7 @@ class Hangman:
             elif guess in self.list_of_guesses:
                 print('You already tried that letter')
             else:
-                print('OK')
-                break
+                Hangman.check_guess(guess)
     
 word_list = ['apple', 'banana', 'orange', 'pear', 'strawberry', 'watermelon']
 new_game = Hangman(word_list)
