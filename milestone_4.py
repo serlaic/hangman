@@ -14,7 +14,7 @@ class Hangman:
         if guess in self.word:
             print(f"Good guess! {guess} is in the word.")
 
-    def ask_for_input(self, check_guesses(guess)):
+    def ask_for_input(self):
         while True:
             guess = input('Please choose a single letter:')
             if not (len(guess) == 1 and guess.isalpha()):
