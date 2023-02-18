@@ -22,7 +22,8 @@ class Hangman:
             elif guess in self.list_of_guesses:
                 print('You already tried that letter')
             else:
-                Hangman.check_guess(guess)
+                self.check_guess(guess)
+                break
     
 word_list = ['apple', 'banana', 'orange', 'pear', 'strawberry', 'watermelon']
 new_game = Hangman(word_list)
