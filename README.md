@@ -20,14 +20,12 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 ## Milestone 4
 
 * Task 1: creates a class Hangman with 2 parameters word_list and num_lives
- 
- **Parameters**
+ * **Parameters**
   * word_list: list
         List of words to be used in the game
   * num_lives: int
         Number of lives the player has
-        
-**Attributes**
+ * **Attributes**
   * word: str
         The word to be guessed picked randomly from the word_list
   * word_guessed: list
