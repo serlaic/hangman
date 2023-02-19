@@ -22,14 +22,12 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 * Task 1: creates a class Hangman with 2 parameters word_list and num_lives
  
  **Parameters**
-
   * word_list: list
         List of words to be used in the game
   * num_lives: int
         Number of lives the player has
         
 **Attributes**
-
   * word: str
         The word to be guessed picked randomly from the word_list
   * word_guessed: list
@@ -44,18 +42,15 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
         A list of the letters that have already been tried
         
 * Task 2 : creates *check_letter* and *ask_letter* methods
-  
   * check_letter(letter)
         Checks if letter is in the word
   * ask_letter()
         Asks user for a letter
         
 * Task 3: defines what happens if letter is in the word
-
   * replaces the underscore(s) in the word_guessed with the letter guessed by the user.
 
 * Task 4: defines what happens if the guess is not in the word you are trying to guess.
-
   * reduces *num_lives* by 1.
   * prints a message saying "Sorry, {letter} is not in the word."
   * prints another message saying "You have {num_lives} lives left."
