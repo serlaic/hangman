@@ -35,23 +35,20 @@ class Hangman:
                 self.check_guess(guess)
                 break
 
-
 def play_game(word_list):
     num_lives = 5
     game = Hangman(word_list , num_lives)
+    print(game.word_guessed)
     while True:
         if game.num_lives == 0:
             print("You lost!")
             break
         elif game.num_letters > 0:
-            print(game.num_lives)
-            print(game.num_letters)
-            print(game.list_of_guesses)
             game.ask_for_input()
         elif game.num_lives > 0 and game.num_letters == 0:
             print("Congratulations. You won the game!")
             break
         
-word_list = ['apple', 'banana', 'orange', 'pear', 'strawberry', 'watermelon']
+word_list = ['apple' , 'banana' , 'orange' , 'kiwi' , 'grapefruit' , 'pear' , 'strawberry' , 'watermelon' , 'pineapple' , 'mango' , 'pomegranate' , 'rasberry']
 
 play_game(word_list)
